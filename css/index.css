@@ -163,10 +163,15 @@ p {
 .header-container {
   background: #F4F4F4;
   margin: 0 0 0 1%;
+  color: black;
 }
 @media (max-width: 500px) {
   .header-container {
     width: 99%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    opacity: 0.8;
   }
 }
 .header-container h1 {
@@ -192,17 +197,24 @@ p {
 @media (max-width: 500px) {
   .header-container nav {
     width: 92%;
-    margin: 1% 0% 0% 15px;
+    margin: 1% 0% 2% 15px;
   }
 }
 .header-container nav a {
   text-decoration: none;
+  color: black;
   margin-bottom: 10px;
 }
 @media (max-width: 500px) {
   .header-container nav a {
     margin: 0;
   }
+}
+.header-container nav a:nth-child(2):hover,
+.header-container a:nth-child(3):hover {
+  background: grey;
+  color: white;
+  box-shadow: 10px 10px 5px grey;
 }
 footer {
   color: #22283B;
@@ -245,9 +257,13 @@ footer {
   border-radius: 5px;
   height: 100%;
 }
+.home .intro img:hover {
+  opacity: 0.7;
+}
 @media (max-width: 500px) {
   .home .intro img {
     width: 95%;
+    margin: 73px 2.5%;
   }
 }
 .home .space-images {
@@ -260,6 +276,9 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .space-images img:hover {
+  opacity: 0.7;
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
@@ -357,6 +376,9 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
+.home .walk .walk-img:hover {
+  opacity: 0.7;
+}
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 96%;
@@ -377,4 +399,10 @@ footer {
   border-radius: 10px;
   padding: 2% 1%;
   margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .home footer {
+    width: 96%;
+    margin-bottom: 0;
+  }
 }
