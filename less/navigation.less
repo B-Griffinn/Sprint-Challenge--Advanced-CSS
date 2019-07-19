@@ -3,19 +3,23 @@
 
 .header-container {
     background: #F4F4F4;
-    margin: 0 0 0 4%;
-    // border: 1px solid red;
+    margin: 0 0 0 1%;
 
                 //PHONE VAR
     @media @phone {
-        width: 91%;    
+        width: 99%;   
     }
     h1 {
         display: flex;
         justify-content: space-around;
         align-content: center;
         font-size: 3.2rem;
-        margin: 15px 0 2% 0;
+        margin: 0 0 1% 0;
+
+        @media @phone {
+            width: 96%; 
+            margin: 0 0 3% 0;  
+        }
     }
     nav {
         display: flex;
@@ -27,7 +31,7 @@
                     //PHONE VAR
         @media @phone {
             width: 92%;
-            margin: 1% 0 0 0;
+            margin: 1% 0% 0% 15px;
         }
     }
     nav a{
@@ -36,7 +40,7 @@
         
                 //PHONE VAR  
         @media @phone {
-            margin: 0 0 3% 0;
+            margin: 0;
         }
     }
 

@@ -2,6 +2,10 @@
 
 .home {
 
+  @media @phone {
+    font-size: 1.8rem;
+  }
+
   .intro {
 
     h2 {
@@ -30,6 +34,10 @@
       margin: 0 2.5%;
       border-radius:5px;
       height: 100%;
+              //PHONE VAR
+      @media @phone{
+        width: 95%;
+      }
     }
   
   }
@@ -48,7 +56,8 @@
                   //PHONE VAR
     @media @phone{
       .blast {
-        width: 95%;
+        width: 89%;
+        margin: 20px 7%;
       }
       .sky {
         display: none;
@@ -94,7 +103,9 @@
    
     //PHONE VAR
     @media @phone {
-      width: 100%;
+      // border: 1px solid red;
+      width: 96%;
+      padding: 0;
       display: flex;
       justify-content: center;
       flex-direction: column-reverse;
@@ -133,8 +144,8 @@
 
              //@PHONE VAR 
       @media @phone {
-        width: 100%;
-        padding: 3% 38%;
+        width: 96%;
+        padding: 3% 40%;
       }
      } 
     }
@@ -145,8 +156,7 @@
 
             //@PHONE VAR 
       @media @phone {
-        width: 100%;
-                
+        width: 96%;        
       }
       
       img {
