@@ -264,6 +264,7 @@ footer {
   .home .intro img {
     width: 95%;
     margin: 73px 2.5%;
+    margin-bottom: 0;
   }
 }
 .home .space-images {
@@ -326,6 +327,7 @@ footer {
   .home .walk {
     width: 96%;
     padding: 0;
+    margin-top: 0;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
